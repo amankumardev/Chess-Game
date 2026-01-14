@@ -1,0 +1,252 @@
+/* Responsive Design */
+
+/* Mobile Phones - Portrait */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .game-screen {
+        padding: 8px;
+    }
+
+    .game-header {
+        margin-bottom: 12px;
+        gap: 10px;
+    }
+
+    .status {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .timer {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .reset-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .board {
+        max-width: min(95vw, 80vh);
+        border: 2px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .box {
+        font-size: clamp(1.5rem, 4.5vmin, 2rem);
+    }
+
+    .mode-container {
+        padding: 25px 15px;
+    }
+
+    .mode-container h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .mode-buttons {
+        gap: 12px;
+    }
+
+    .mode-btn {
+        padding: 20px 15px;
+        min-width: 120px;
+    }
+
+    .mode-btn i {
+        font-size: 2rem;
+    }
+
+    .mode-time {
+        font-size: 2.5rem;
+    }
+
+    .mode-label {
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        padding: 25px 15px;
+        max-width: 90vw;
+    }
+
+    .modal-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .promotion-choices {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .promotion-btn {
+        padding: 15px;
+        min-width: 70px;
+        flex: 1;
+    }
+
+    .promotion-btn i {
+        font-size: 2rem;
+    }
+
+    .promotion-btn span {
+        font-size: 0.8rem;
+    }
+
+    .result div {
+        padding: 40px 30px;
+    }
+
+    .result h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 481px) and (max-width: 768px) {
+    .game-screen {
+        padding: 15px;
+    }
+
+    .game-header {
+        margin-bottom: 20px;
+    }
+
+    .status {
+        font-size: 1.6rem;
+    }
+
+    .timer {
+        font-size: 1.4rem;
+        padding: 10px 24px;
+    }
+
+    .board {
+        max-width: min(70vw, 65vh);
+    }
+
+    .mode-container {
+        padding: 40px 30px;
+    }
+
+    .mode-container h1 {
+        font-size: 2.8rem;
+    }
+
+    .mode-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mode-btn {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .modal-content {
+        padding: 35px 25px;
+    }
+}
+
+/* Landscape Phones and Small Tablets */
+@media (max-height: 600px) and (orientation: landscape) {
+    .game-screen {
+        padding: 5px;
+    }
+
+    .game-header {
+        margin-bottom: 8px;
+        gap: 8px;
+    }
+
+    .status {
+        font-size: 1.1rem;
+    }
+
+    .timer {
+        font-size: 0.95rem;
+        padding: 6px 14px;
+    }
+
+    .reset-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    .board {
+        max-width: min(45vw, 85vh);
+    }
+
+    .box {
+        font-size: clamp(1.2rem, 4vmin, 1.8rem);
+    }
+
+    .mode-container {
+        padding: 20px 25px;
+    }
+
+    .mode-container h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .mode-buttons {
+        flex-direction: row;
+    }
+
+    .mode-btn {
+        padding: 15px 12px;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .promotion-choices {
+        gap: 10px;
+    }
+}
+
+/* Medium to Large Laptops */
+@media (min-width: 769px) and (max-width: 1366px) {
+    .board {
+        max-width: min(560px, 60vw, 65vh);
+    }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+    .box {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mode-btn,
+    .reset-btn,
+    .promotion-btn {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+
+    /* Larger tap targets for mobile */
+    .reset-btn {
+        min-height: 44px;
+    }
+
+    .promotion-btn {
+        min-height: 60px;
+        min-width: 60px;
+    }
+}

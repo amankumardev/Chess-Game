@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Chess Game - Time Controls</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/36925d77e8.js"></script>
+</head>
+<body>
+
+<!-- Mode Selection Screen -->
+<div id="modeSelection" class="mode-selection">
+  <div class="mode-container">
+    <img src="Killer_Chess_Game-removebg-preview.png" alt="Chess Game Logo" class="game-logo">
+    <h1>♔ Chess Game ♔</h1>
+    <p class="subtitle">Choose Your Time Control</p>
+    <div class="mode-buttons">
+      <button class="mode-btn" data-time="180" id="mode3">
+        <i class="fa-solid fa-bolt"></i>
+        <span class="mode-time">3</span>
+        <span class="mode-label">Minutes</span>
+      </button>
+      <button class="mode-btn featured" data-time="300" id="mode5">
+        <i class="fa-solid fa-clock"></i>
+        <span class="mode-time">5</span>
+        <span class="mode-label">Minutes</span>
+      </button>
+      <button class="mode-btn" data-time="600" id="mode10">
+        <i class="fa-solid fa-chess"></i>
+        <span class="mode-time">10</span>
+        <span class="mode-label">Minutes</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Game Screen -->
+<div id="gameScreen" class="game-screen" style="display: none;">
+  <div class="game-header">
+    <h2 id="status" class="status">WHITE TURN</h2>
+    <h3 id="timer" class="timer">05:00 | 05:00</h3>
+    <button id="resetBtn" class="reset-btn" title="New Game">
+      <i class="fa-solid fa-rotate-right"></i> New Game
+    </button>
+  </div>
+  
+  <div class="board-container">
+    <div class="board"></div>
+  </div>
+</div>
+
+<!-- Pawn Promotion Modal -->
+<div id="promotionModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <h3>Promote Pawn</h3>
+    <p>Choose a piece:</p>
+    <div class="promotion-choices">
+      <button class="promotion-btn" data-piece="q">
+        <i class="fa-solid fa-chess-queen"></i>
+        <span>Queen</span>
+      </button>
+      <button class="promotion-btn" data-piece="r">
+        <i class="fa-solid fa-chess-rook"></i>
+        <span>Rook</span>
+      </button>
+      <button class="promotion-btn" data-piece="b">
+        <i class="fa-solid fa-chess-bishop"></i>
+        <span>Bishop</span>
+      </button>
+      <button class="promotion-btn" data-piece="n">
+        <i class="fa-solid fa-chess-knight"></i>
+        <span>Knight</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
