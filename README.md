@@ -24,7 +24,7 @@ No installation required.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/chess-game.git
+   git clone https://(https://github.com/amankumardev/Chess-Game)
 chess-game/
 │── index.html
 │── style.css
