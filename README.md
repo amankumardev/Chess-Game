@@ -51,8 +51,7 @@ Chess-Game/
 │── script.js
 │── assets/
 🎯 How To Run Locally
-git clone https://github.com/your-username/chess-game.git
-cd chess-game
+git clone (https://github.com/amankumardev/Chess-Game/tree/main?tab=readme-ov-file)
 open index.html
 
 Or simply double-click index.html.
